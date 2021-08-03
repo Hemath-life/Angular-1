@@ -1,0 +1,29 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game thumb-container">
+      <img src="https://vignette.wikia.nocookie.net/breakingbad/images/9/95/JesseS5.jpg/revision/latest?cb=20120620012441" alt="Thumbnail" />
+    </div>
+    <div class="game-description">Name</div>
+    <div class="game-platforms">
+      <img
+        class="game-platform"
+        src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
+      />
+    </div>
+  </div>
+</div>
